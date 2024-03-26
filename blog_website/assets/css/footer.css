@@ -1,0 +1,76 @@
+@import "index.css";
+
+.footer {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.footer .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+.footer .center div {
+  margin-top: 40%;
+  margin-bottom: auto;
+}
+.footer .center .copyright p {
+  margin-top: auto;
+}
+
+.footer .scoial_media {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.footer .scoial_media i {
+  font-size: 24px;
+}
+
+.footer .copyright_vertical{
+    visibility: hidden;
+    width: 0;
+}
+
+@media screen and (max-width: 500px){
+  .footer {
+    flex-direction: column;
+  }
+  .footer .scoial_media {
+    margin-left: 0;
+  }
+  .footer .center {
+    margin-left: 0;
+  }
+  .footer .center div{
+    margin-top: 0;
+  }
+  .footer .center .copyright {
+    visibility: hidden;
+  }
+  .footer .copyright_vertical{
+    visibility: visible;
+    width: 130px;
+  }
+}
