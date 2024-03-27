@@ -1,0 +1,29 @@
+@import "index.css";
+.formstyle {
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+}
+
+.formstyle input {
+  width: 80%;
+  padding: 5px;
+}
+
+.formstyle .radio {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.formstyle .submit {
+  background-color: var(--primary-color);
+  color: white;
+}
+.formstyle .submit:hover{
+    background-color: var(--accentColor);
+}

@@ -1,0 +1,17 @@
+@import url("https://use.typekit.net/fvm6mga.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "aileron", sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+:root {
+  --primary-color: #410FF8;
+  --accentColor: #6e49f0;
+  --blackColor: #000000;
+}

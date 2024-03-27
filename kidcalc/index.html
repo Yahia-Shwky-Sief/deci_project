@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <script src="assets/js/login.js"></script>
+  </head>
+  <body>
+    <div class="formstyle">
+      <h3>Login Form</h3>
+      <form
+        class="login_form"
+        action="home.html"
+        method="post"
+        name="form"
+        onsubmit="return login()"
+      >
+        <input required type="text" id = "inputname" placeholder="name" name="name" />
+        <input
+          type="number"
+          id="age"
+          placeholder="Age (e.g. 25)"
+          data-type="number"
+          min="1"
+        />
+        <div class="radio">
+          <input type="radio" name="theme" value="white&yellow" />
+          <label for="white&yellow">white & yellow</label>
+          <input type="radio" name="theme" value="white&red" />
+          <label for="white&red">white & red</label>
+          <input type="radio" name="theme" value="blue&grey" />
+          <label for="blue&grey">blue & grey</label>
+        </div>
+        <input class="submit" type="submit" value="Submit form" />
+      </form>
+    </div>
+  </body>
 </html>
