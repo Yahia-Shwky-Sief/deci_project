@@ -1,0 +1,43 @@
+@import "style.css";
+
+.about div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto 50%;
+}
+.about img {
+  min-width: 200px;
+  width: 50%;
+  border-radius: 50%;
+  border: solid black 1.5px;
+  margin: 5px;
+}
+
+.about .title {
+  font-weight: 700;
+  font-size: 8vw;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.about .date {
+  margin-top: 10px;
+  margin-left: 85%;
+  margin-right: 5px;
+  opacity: 60%;
+  font-size: small;
+  min-width: 100px;
+}
+
+.about .description {
+  margin-left: 5px;
+}
+.about .sub_heading {
+  font-size: 4vw;
+  font-weight: 700;
+  margin: 5px;
+}

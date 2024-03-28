@@ -72,5 +72,6 @@
   .footer .copyright_vertical{
     visibility: visible;
     width: 130px;
+    margin: 5px;
   }
 }
