@@ -1,0 +1,68 @@
+@import "index.css";
+
+.radio {
+  display: flex;
+  gap: 8px;
+}
+
+.radio .theme_radio {
+  width: 100px;
+  height: 30px;
+  border: solid black 3px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--backgroundColor);
+}
+
+.theme_radio:hover {
+  background-color: var(--backgroundColorsec);
+}
+
+.theme_radio .avatar {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid black 1.5px;
+}
+#theme1 {
+  background-color: #e5383b;
+}
+
+#main1 {
+  background-color: #e5383b;
+}
+
+#sec1 {
+  background-color: #161a1d;
+}
+
+#back1 {
+  background-color: #ffffff;
+}
+
+#main2 {
+  background-color: #ffc300;
+}
+
+#sec2 {
+  background-color: #161a1d;
+}
+
+#back2 {
+  background-color: #ffffff;
+}
+
+#main3 {
+  background-color: #0466c8;
+}
+
+#sec3 {
+  background-color: #161a1d;
+}
+
+#back3 {
+  background-color: #ffffff;
+}

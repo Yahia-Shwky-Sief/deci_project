@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
     <script src="assets/js/login.js"></script>
   </head>
-  <body>
-    <div class="formstyle">
-      <h3>Login Form</h3>
-      <form
-        class="login_form"
-        action="home.html"
-        method="post"
-        name="form"
-        onsubmit="return login()"
-      >
-        <input required type="text" id = "inputname" placeholder="name" name="name" />
-        <input
-          type="number"
-          id="age"
-          placeholder="Age (e.g. 25)"
-          data-type="number"
-          min="1"
-        />
-        <div class="radio">
-          <input type="radio" name="theme" value="white&yellow" />
-          <label for="white&yellow">white & yellow</label>
-          <input type="radio" name="theme" value="white&red" />
-          <label for="white&red">white & red</label>
-          <input type="radio" name="theme" value="blue&grey" />
-          <label for="blue&grey">blue & grey</label>
-        </div>
-        <input class="submit" type="submit" value="Submit form" />
-      </form>
+  <body onload="theme_mange('white&red')">
+    <div class="container">
+      <div class="formstyle">
+        <h3>Login Form</h3>
+        <form
+          class="login_form"
+          action="home.html"
+          method="post"
+          name="form"
+          onsubmit="return storeData()"
+        >
+          <input
+            required
+            class="text"
+            type="text"
+            id="inputname"
+            placeholder="name"
+            name="name"
+          />
+          <input
+            required
+            type="number"
+            class="text"
+            id="age"
+            placeholder="Age (e.g. 25)"
+            data-type="number"
+            min="1"
+          />
+          <div class="radio">
+            <a onclick="theme_mange('white&red')">
+              <div class="theme_radio" id="theme1">
+                <div id="main1" class="avatar"></div>
+                <div id="sec1" class="avatar"></div>
+                <div id="back1" class="avatar"></div>
+              </div>
+            </a>
+            <a onclick="theme_mange('white&yellow')">
+              <div class="theme_radio" id="theme2">
+                <div id="main2" class="avatar"></div>
+                <div id="sec2" class="avatar"></div>
+                <div id="back2" class="avatar"></div>
+              </div>
+            </a>
+            <a onclick="theme_mange('blue&grey')">
+              <div class="theme_radio" id="theme3">
+                <div id="main3" class="avatar"></div>
+                <div id="sec3" class="avatar"></div>
+                <div id="back3" class="avatar"></div>
+              </div>
+            </a>
+          </div>
+          <input class="submit" type="submit" value="Submit form" />
+        </form>
+      </div>
     </div>
   </body>
 </html>

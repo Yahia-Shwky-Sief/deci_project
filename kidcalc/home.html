@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="assets/js/login.js"></script>
     <link rel="stylesheet" href="assets/css/home.css" />
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/cul.js"></script>
   </head>
-  <body onload="get_name()">
-    <p id="text">s</p>
-    <p id="text2">s</p>
-    <p id="text3">s</p>
-    <div>essc</div>
+  <body onload="getData()">
+    <header>
+      <img src="" alt="" id="imageid" />
+      <p id="text"></p>
+      <p id="text2"></p>
+    </header>
+    <div class="cal">
       <input
         type="number"
         id="num1"
+        class="text"
         placeholder="num1"
         data-type="number"
         min="1"
@@ -23,20 +28,24 @@
         type="number"
         id="num2"
         placeholder="num2"
+        class="text"
         data-type="number"
         min="1"
       />
-      <input
-        type="text"
-        id="op"
-        placeholder="op"
-      />
-      <input
-      type="text"
-      id="kidanswer"
-      placeholder="kidanswer"
-    />
-      <button onclick="cul()"></button>
-      <p id="res">sadw</p>
+      <input type="text" class="text" id="op" placeholder="op" />
+      <input type="text" class="text" id="kidanswer" placeholder="kidanswer" />
+      <button class="submit" onclick="cul()">Done</button>
+      <div class="Result">
+        <div>
+          <p>Result:</p>
+          <p id="res"></p>
+        </div>
+
+        <div>
+          <p>How many true:</p>
+          <p id="correct"></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

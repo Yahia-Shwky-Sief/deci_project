@@ -1,5 +1,55 @@
-div{
-    background-color: var(--primary-color) ;
-    width: 30;
-    height: 30;
+@import "index.css";
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 180px;
+}
+
+header p {
+    font-size: large;
+    margin-right: 5px;
+}
+
+.cal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cal input {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.cal .text {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.cal .submit {
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 3px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.cal .Result {
+    margin-top: 5%;
+   margin-left: 5%;
+   display: flex;
+   flex-direction: column;
+}
+.cal .Result div{
+   display: flex;
+}
+.cal p{
+    margin: 5px;
 }
